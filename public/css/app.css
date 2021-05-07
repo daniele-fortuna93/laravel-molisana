@@ -13,6 +13,16 @@ body {
   margin: auto;
 }
 
+@media screen and (max-width: 1100px) {
+  .container {
+    max-width: 850px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .container {
+    max-width: 700px;
+  }
+}
 header {
   text-align: center;
 }
@@ -43,6 +53,20 @@ nav ul a:hover {
 nav ul .active {
   background-color: #b2e5fc;
 }
+nav .burger-menu {
+  color: #002d73;
+  font-size: 35px;
+  cursor: pointer;
+  display: none;
+}
+@media screen and (max-width: 1100px) {
+  nav ul {
+    display: none;
+  }
+  nav .burger-menu {
+    display: block;
+  }
+}
 
 main {
   background-image: url("../images/fondo-pag-speciali.jpg");
@@ -51,7 +75,7 @@ main {
 
 section h2 {
   text-transform: uppercase;
-  font-size: 30px;
+  font-size: 35px;
   color: #002d73;
   margin: 15px 10px;
   font-weight: 400;
@@ -67,4 +91,82 @@ section .card {
 section .card img {
   width: 100%;
   display: block;
+}
+@media screen and (max-width: 1100px) {
+  section .card {
+    width: calc((100% / 2 ) - 20px);
+  }
+}
+@media screen and (max-width: 900px) {
+  section .card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+footer {
+  color: #848d9b;
+  padding-top: 30px;
+}
+footer .container {
+  display: flex;
+}
+footer .info {
+  width: 30%;
+}
+footer .info img {
+  width: 250px;
+}
+footer .info ul {
+  list-style: none;
+  font-size: 14px;
+}
+@media screen and (max-width: 1100px) {
+  footer .container {
+    flex-wrap: wrap;
+  }
+  footer .info {
+    width: 100%;
+  }
+  footer .info img {
+    width: 250px;
+  }
+}
+footer .footer_link {
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+}
+footer .footer_link ul {
+  width: 50%;
+  list-style: none;
+}
+footer .footer_link ul li:first-child {
+  margin-bottom: 15px;
+}
+footer .footer_link ul li {
+  margin: 10px 0;
+}
+footer .footer_link ul a {
+  color: #848d9b;
+  text-decoration: none;
+}
+footer .footer_link ul a:hover {
+  text-decoration: underline;
+}
+footer .footer_link h3 {
+  font-size: 23px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+footer img {
+  width: 100%;
+}
+@media screen and (max-width: 1100px) {
+  footer .footer_link {
+    width: 100%;
+  }
+  footer .footer_link ul {
+    width: 100%;
+  }
 }

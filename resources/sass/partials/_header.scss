@@ -2,9 +2,9 @@ header{
     text-align: center;
     .logo{
         padding: 40px 0;
-    img{
-        width: 200px;
-    }  
+        img{
+            width: 200px;
+        }  
     }
      
 }
@@ -27,4 +27,20 @@ nav{
             background-color: $main_color;
         }
     }
+    .burger-menu{
+        color: $title_color;
+        font-size: $font_big;
+        cursor: pointer;
+        display: none;
+    }
+    // responsive
+    @media screen and (max-width: 1100px){
+        ul{
+            display: none;
+        }
+        .burger-menu{
+            display: block;
+        }
+    }
+    // /responsive
 }

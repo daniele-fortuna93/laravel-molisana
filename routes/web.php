@@ -149,9 +149,51 @@ Route::get('/', function () {
             $cortissima[] = $pasta;
         }
     }
+    $pastificioLink = [
+        "Il Pastificio",
+        "Grano decorticato a pietra",
+        "Il Molise c'è",
+        "Filiera integrata",
+        "100 anni di pasta",
+        "Sartoria della pasta",
+        "Spaghetto Quadrato",
+        "Le Persone"
+    ];
+    $collezioneChefLink = [
+        "Collezione da Chef",
+        "Grandi Cucine",
+        "Biologiche",
+        "Quadrate"
+    ];
+    $prodottiLink = [
+        "Le Classiche",
+        "Le Integrali",
+        "Le Speciali",
+        "Le Biologiche",
+        "Le Gluten-Free",
+        "Le Semole",
+        "Le Extra di Lusso"
+    ];
+    $infoAzienda = [
+        "Ragione sociale: La Molisana S.P.A.",
+        "Sede Legale: Contrada Colle delle Api, 100/A",
+        "86100 - Campobasso (CB)",
+        "Pec: lamolisana@pec.it",
+        "Tel: +39 0874 4981",
+        "Fax: +39 0874 629584",
+        "info@lamolisana.it (per segnalazioni degli utenti)",
+        "commerciale@lamolisana.it",
+        "export@lamolisana.it",
+        "numero verde 800818081",
+        "telefono 3801292455"
+    ];
     return view('home', [
         'corte' => $corta,
         'lunghe' => $lunga,
-        'cortissime' => $cortissima
+        'cortissime' => $cortissima,
+        'pastificioLink' => $pastificioLink,
+        'collezioneChefLink' => $collezioneChefLink,
+        'prodottiLink' => $prodottiLink,
+        'infoAzienda' => $infoAzienda
     ]);
 });
