@@ -1,0 +1,30 @@
+header{
+    text-align: center;
+    .logo{
+        padding: 40px 0;
+    img{
+        width: 200px;
+    }  
+    }
+     
+}
+nav{
+    padding: 15px 0;
+    ul{
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        a{
+            font-size: $font_medium;
+            text-decoration: none;
+            color: #000;
+            padding: 15px;
+            &:hover{
+                background-color: rgba($main_color,0.5);
+            }
+        }
+        .active{
+            background-color: $main_color;
+        }
+    }
+}
