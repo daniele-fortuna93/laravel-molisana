@@ -23,6 +23,26 @@
                         @endforeach
                     </div>
                 </section>
+                <section>
+                    <h2>Le corte</h2>
+                    <div class="cards">
+                        @foreach ($corte as $pasta)
+                            <div class="card">
+                                <img src="{{ $pasta['src'] }}" alt="{{ $pasta['titolo'] }}">
+                            </div>
+                        @endforeach
+                    </div>
+                </section>
+                <section>
+                    <h2>Le cortissime</h2>
+                    <div class="cards">
+                        @foreach ($cortissime as $pasta)
+                            <div class="card">
+                                <img src="{{ $pasta['src'] }}" alt="{{ $pasta['titolo'] }}">
+                            </div>
+                        @endforeach
+                    </div>
+                </section>
             </div>
         </main>
         <footer></footer>
