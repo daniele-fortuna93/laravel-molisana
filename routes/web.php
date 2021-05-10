@@ -47,8 +47,8 @@ Route::get('/', function () {
 Route::get('/prodotti/{id}', function ($id) {
     $data = config('db.data');
     $pasta = $data[$id];
-    $next = ($id == 11) ? 0 : $id + 1;
-    $prev = ($id == 0) ? 11 : $id - 1;
+    $next = ($id == (count($data) - 1) ) ? 0 : $id + 1;
+    $prev = ($id == 0) ? (count($data) - 1) : $id - 1;
     $pastificioLink = config('db.pastificioLink');
     $collezioneChefLink = config('db.collezioneChefLink');
     $prodottiLink = config('db.prodottiLink');
