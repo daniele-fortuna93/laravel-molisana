@@ -1,4 +1,4 @@
-main{
+.main-bg{
     background-image: url('../images/fondo-pag-speciali.jpg');
     padding: 30px 0;
 }
@@ -20,6 +20,7 @@ section{
         img{
             width: 100%;
             display: block;
+            cursor: pointer;
         }
     }
     // responsive

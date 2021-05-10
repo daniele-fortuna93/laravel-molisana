@@ -1,0 +1,30 @@
+.product-bg{
+    background-color: $product-bg_color;
+    padding: 40px 0;
+    color: $title_color;
+    position: relative;
+    .product{      
+        h1{
+            text-align: center;
+        }
+        img{
+            display: block;
+            width: 100%;
+        }
+    }
+    .angle{
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        font-size: 50px;
+        background-color: rgba( 255, 255, 255, 0.4);
+        padding: 5px 10px;
+        color: #fff;
+        &.left{
+            left: 0;
+        }
+        &.right{
+            right: 0;
+        }
+    }
+}

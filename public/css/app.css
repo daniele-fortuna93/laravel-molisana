@@ -33,9 +33,6 @@ header .logo img {
   width: 200px;
 }
 
-nav {
-  padding: 15px 0;
-}
 nav ul {
   display: flex;
   justify-content: center;
@@ -46,6 +43,7 @@ nav ul a {
   text-decoration: none;
   color: #000;
   padding: 15px;
+  display: inline-block;
 }
 nav ul a:hover {
   background-color: rgba(178, 229, 252, 0.5);
@@ -68,7 +66,7 @@ nav .burger-menu {
   }
 }
 
-main {
+.main-bg {
   background-image: url("../images/fondo-pag-speciali.jpg");
   padding: 30px 0;
 }
@@ -91,6 +89,7 @@ section .card {
 section .card img {
   width: 100%;
   display: block;
+  cursor: pointer;
 }
 @media screen and (max-width: 1100px) {
   section .card {
@@ -102,6 +101,41 @@ section .card img {
     width: 100%;
     margin-bottom: 20px;
   }
+}
+
+.product-bg {
+  background-color: #b7dae5;
+  padding: 40px 0;
+  color: #002d73;
+  position: relative;
+}
+.product-bg .product h1 {
+  text-align: center;
+}
+.product-bg .product img {
+  display: block;
+  width: 100%;
+}
+.product-bg .angle {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  font-size: 50px;
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 5px 10px;
+  color: #fff;
+}
+.product-bg .angle.left {
+  left: 0;
+}
+.product-bg .angle.right {
+  right: 0;
+}
+
+.news-bg {
+  background-color: #b7dae5;
+  padding: 40px 0;
+  text-align: center;
 }
 
 footer {
