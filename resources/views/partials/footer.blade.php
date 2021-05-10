@@ -1,7 +1,7 @@
 <footer>
     <div class="container">
         <div class="info">
-            <img src="images/marchio-sito-test.png" alt="">
+            <img src="{{ asset('images/marchio-sito-test.png') }}" alt="">
             <ul>
                 @foreach ($infoAzienda as $info)
                     <li>{{ $info }}</li>
@@ -30,5 +30,5 @@
             </ul>
         </div>
     </div>
-    <img src="images/footer-montagne-bottom.jpg" alt="">
+    <img src="{{ asset('images/footer-montagne-bottom.jpg') }}" alt="">
 </footer>
